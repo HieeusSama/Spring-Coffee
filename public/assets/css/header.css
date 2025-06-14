@@ -1,0 +1,297 @@
+.headerTop
+{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+    color: var(--text-color1);
+}
+
+.headerTop__setup
+{
+    display: flex;
+}
+
+.headerTop__setup-option
+{
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+.headerTop__setup-lang
+{
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.headerTop__setup-lang:focus .headerTop__LangActive
+{
+    display: block;
+}
+
+.headerTop__LangActive
+{
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    right: 80px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform-origin: 50% top;
+    animation: langActiveAnimation ease-in 0.1s;
+}
+
+@keyframes langActiveAnimation
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
+
+.headerTop__langItems
+{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.headerTop__langItems:hover
+{
+    background-color: #e8e8e8;
+}
+
+
+.headerNavbar
+{
+    margin: 5px 15px;
+    height: 55px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.headerNavbar__logo
+{
+    height: 53px;
+}
+
+.headerNavbar__search
+{
+    margin-left: 40px;
+    height: 37px;
+    width: 880px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.headerNavbar__search--btnSelect
+{
+    height: 36px;
+    width: 130px;
+    border: none;
+    border-right: 1px solid #000000;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.headerNavbar__search--btnSelect:hover
+{
+    background-color: #e8e8e8;
+}
+
+.headerNavbar__search--input
+{
+    height: 36px;
+    flex: 1;
+    margin: 0;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.headerNavbar__search--btnSearch
+{
+    margin-left: 50px;
+    height: 36px;
+    width: 44px;
+    background-color: var(--main-color);
+    border: none;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+}
+
+.headerNavbar__search--btnSearch:hover
+{
+    background-color: #ff0033;
+}
+
+.headerNavbar__advancedSearch
+{
+    margin-left: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 94px;
+    height: 36px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background: #f6f6f6;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.headerNavbar__advancedSearch:hover
+{
+    background-color: #e8e8e8;
+}
+
+.headerNavbar__list
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    
+}
+
+.headerNavbar__list--elements
+{
+    color: var(--text-color2);
+    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.headerMenu
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 36px;
+    background-color: #f5f7fa;
+    color: #333;
+    padding-left: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.headerMenu__element
+{
+    display: grid;
+    width: 106px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #536280;
+    cursor: pointer;
+}
+
+.headerMenu__element:hover
+{
+    color: var(--main-color);
+}
+
+.headerMenu .headerMenu__wall
+{
+    height: 20px;
+    width: 1px;
+    background-color: #b8c3d9;
+    list-style: none;
+}
+
+.headerMenu__element--isActive
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    top: -4px;
+    margin-bottom: -4px;
+    width: 106px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+}
+
+.headerFloor
+{
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-color);
+}
+
+.headerMenu2
+{
+    width: 100vw;
+    height: 38px;
+    background-color: #f5f7fa;
+    color: #333;
+    padding-left: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-right: 500px;
+}
+
+.headerMenu2__element
+{
+    flex: 1px;
+    color: #333;
+    font-size: 12px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.headerMenu2__element:hover
+{
+    color: var(--main-color);
+}
+
+.headerMenu2__element--isActive
+{
+    flex: 1px;
+    color: var(--main-color);
+    font-size: 12px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.headerMenu2__element--isActive .headerMenu2__element--wall
+{
+    position: relative;
+    top: 13px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+
