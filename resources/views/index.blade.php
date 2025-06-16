@@ -14,7 +14,7 @@
     <div id="header">
         <div class="headerTop"></div>
         <div class="headerNavbar">
-            <a href="./index.html"><img src="./assets/img/logo.png" alt="" class="headerNavbar__logo"></a>
+            <img src="./assets/img/logo.png" alt="" class="headerNavbar__logo">
             <div class="headerNavbar__search">
                 <select class="headerNavbar__search--btnSelect">
                     <option value="all">Tất cả</option>
@@ -37,10 +37,12 @@
                     <i class="fa-solid fa-user-plus" style="margin-bottom: 5px;"></i>
                     Đăng ký
                 </li>
-                <li class="headerNavbar__list--elements">
-                    <i class="fa-solid fa-right-to-bracket" style="margin-bottom: 5px;"></i>
-                    Đăng nhập
-                </li>
+                <a href="{{ route('user') }}"> 
+                    <li class="headerNavbar__list--elements">
+                        <i class="fa-solid fa-right-to-bracket" style="margin-bottom: 5px;"></i>
+                        Đăng nhập
+                    </li>     
+                </a>
                 <li class="headerNavbar__list--elements">
                     <i class="fa-solid fa-cart-shopping" style="margin-bottom: 5px;"></i>
                     Giỏ hàng
@@ -78,8 +80,8 @@
         <div class="slider">
             <div class="slides">
                 <img class="slide" src="./assets/img/banner1.png" alt="Image #1">
-                <img class="slide" src="./assets/img/banner1.png" alt="Image #2">
-                <img class="slide" src="./assets/img/banner1.png" alt="Image #3">
+                <img class="slide" src="./assets/img/banner2.png" alt="Image #2">
+                <img class="slide" src="./assets/img/banner3.png" alt="Image #3">
             </div>
             <button class="prev" onclick="prevSlide()">&#10094</button>
             <button class="next" onclick="nextSlide()">&#10095</button>
@@ -209,7 +211,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             
             </div>

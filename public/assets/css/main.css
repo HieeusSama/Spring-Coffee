@@ -35,7 +35,7 @@ img.displaySlide{
     to {opacity: 1}
 }
 .subtitle {
-  color: red;
+  color: e2012d;
   margin-bottom: 5px;
 }
 
@@ -101,7 +101,7 @@ img.displaySlide{
     width: 55px;
     text-align: center;
     align-items: center;
-    background-color: red;
+    background-color: e2012d;
     color: white;
     font-size: 12px;
     border-radius: 4px;
@@ -174,5 +174,175 @@ img.displaySlide{
 {
     height: 40px;
     width: 20px;
-    background-color: #FF0000;
+    background-color: #e2012d;
 }
+
+.wallheader{
+    height: 29px;
+    width: 5px;
+    background-color: #e2012d;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textcart
+{
+    font-weight: bold;
+    color: #e2012d;
+    font-size: 24px;
+}
+
+.cart {
+  width: 1003px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background: #fff;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background: #f5f5f5;
+}
+
+th, td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.product img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.quantity button {
+  padding: 4px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.total .price {
+    font-size: 24px;
+  color: #e2012d;
+}
+
+.buy {
+  background-color: #e2012d;
+  color: #fff;
+  height: 40px;
+  width: 210px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qr-code img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.bank-info {
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.info-label {
+    font-weight: bold;
+    width: 120px;
+    color: #555;
+}
+
+.info-value {
+    flex: 1;
+}
+
+.address-popup {
+            display: flex; /* Thay đổi từ none thành flex để hiển thị ngay */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .address-popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 500px;
+        }
+        
+        .address-popup h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .address-popup input, .address-popup select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .address-popup-buttons {
+            
+            display: flex;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+        
+        .address-popup-buttons button {
+            height: 36px;
+            width: 140px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .address-popup-back {
+            background-color: #ffffff;
+        }
+        
+        .address-popup-complete {
+            background-color: #e2012d;
+            color: white;
+        }
